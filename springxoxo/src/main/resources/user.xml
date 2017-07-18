@@ -7,4 +7,6 @@
      http://www.springxoxo.com/schema/user http://www.springxoxo.com/schema/user.xsd">
 
     <xxoo:user id="userBean" userName="春哥" email="1032578874@qq.com"/>
+
+    <bean class="com.beecho.springxoxo.annotation.AnnotationContext"/>
 </beans>
