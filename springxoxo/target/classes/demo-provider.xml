@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:xxoo="http://www.springxoxo.com/schema/beecho"
@@ -7,7 +7,12 @@
      http://www.springxoxo.com/schema/beecho http://www.springxoxo.com/schema/beecho.xsd">
 
     <xxoo:xxoo id="userBean" userName="春哥" email="1032578874@qq.com"/>
-    <xxoo:application id="applicationBean" name="your application" owner="邮箱前缀" organization="your organization"/>
+    <!--<xxoo:application name="yourapplication" owner="邮箱前缀" organization="yourorganization"/>&lt;!&ndash;应用名称，应用所有者，组织，命名规则：字母，数字，“-“，”_“，“.”&ndash;&gt;-->
+    <!--<xxoo:registry address="192.168.8.48:2181" protocol="zookeeper"/>&lt;!&ndash;注册中心地址&ndash;&gt;-->
+    <!--<xxoo:protocol name="dubbo"/> &lt;!&ndash;协议类型&ndash;&gt;-->
+    <!--<xxoo:service service="com.beecho.springxoxo.example.UserService" ref="userService" protocol="dubbo" group="autohome"/> &lt;!&ndash;提供接口&ndash;&gt;-->
 
-    <bean class="com.beecho.springxoxo.annotation.AnnotationContext"/>
+    <bean id="userService" class="com.beecho.springxoxo.example.UserServiceImpl" /> <!--接口的实现-->
+
+    <!--<bean class="com.beecho.springxoxo.annotation.AnnotationContext"/>-->
 </beans>

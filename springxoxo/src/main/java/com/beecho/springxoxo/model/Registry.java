@@ -6,6 +6,7 @@ package com.beecho.springxoxo.model;
 
 public class Registry {
     private String address;
+    private String protocol;
 
     public String getAddress() {
         return address;
@@ -13,5 +14,13 @@ public class Registry {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getProtocol() {
+        return protocol;
+    }
+
+    public void setProtocol(String protocol) {
+        this.protocol = protocol;
     }
 }

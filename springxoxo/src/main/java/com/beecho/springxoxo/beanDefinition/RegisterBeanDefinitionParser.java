@@ -15,10 +15,12 @@ public class RegisterBeanDefinitionParser implements BeanDefinitionParser {
     public BeanDefinition parse(Element element, ParserContext parserContext) {
         String id = element.getAttribute("id");
         String address = element.getAttribute("address");
+        String protocol = element.getAttribute("protocol");
 
         RootBeanDefinition beanDefinition = new RootBeanDefinition();
         beanDefinition.setBeanClass(Registry.class);
         beanDefinition.getPropertyValues().addPropertyValue("address", address);
+        beanDefinition.getPropertyValues().addPropertyValue("protocol", protocol);
         parserContext.getRegistry().registerBeanDefinition(id, beanDefinition);
 
         return beanDefinition;

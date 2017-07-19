@@ -11,16 +11,17 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
     public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("demo-provider.xml");
-//        Xxoo bean = (Xxoo) ac.getBean("userBean");
+        Xxoo bean = (Xxoo) ac.getBean("userBean");
 //
 //        User bean = (User) AnnotationContext.getBean("userBean");
-//        System.out.println(bean.getUserName() + " " + bean.getEmail());
+        System.out.println(bean.getUserName() + " " + bean.getEmail());
 
-        Application application = (Application) ac.getBean("applicationBean");
-        System.out.println(application.getName() + " " + application.getOwner() + " " + application.getOrganization());
+//        Application application = (Application) ac.getBean("applicationBean");
+//        System.out.println(application.getName() + " " + application.getOwner() + " " + application.getOrganization());
 
 //        AnnotationContext.addStudent("第一个学生");
 //        AnnotationContext.addStudent("第二个学生");
 //        AnnotationContext.addStudent("第三个学生");
+        System.out.println("server finish!");
     }
 }

@@ -24,6 +24,7 @@
         <complexType>
             <attribute name="id" type="string" />
             <attribute name="address" type="string" />
+            <attribute name="protocol" type="string" />
         </complexType>
     </element>
 
