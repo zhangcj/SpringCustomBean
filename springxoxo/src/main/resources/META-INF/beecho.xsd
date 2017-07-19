@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.springxoxo.com/schema/beecho"
+        elementFormDefault="qualified">
+
+    <element name="xxoo">
+        <complexType>
+            <attribute name="id" type="string" />
+            <attribute name="userName" type="string" />
+            <attribute name="email" type="string" />
+        </complexType>
+    </element>
+
+    <element name="application">
+        <complexType>
+            <attribute name="id" type="string" />
+            <attribute name="name" type="string" />
+            <attribute name="owner" type="string" />
+            <attribute name="organization" type="string" />
+        </complexType>
+    </element>
+
+    <element name="registry">
+        <complexType>
+            <attribute name="id" type="string" />
+            <attribute name="address" type="string" />
+        </complexType>
+    </element>
+
+    <element name="protocol">
+        <complexType>
+            <attribute name="id" type="string" />
+            <attribute name="name" type="string" />
+        </complexType>
+    </element>
+
+    <element name="service">
+        <complexType>
+            <attribute name="id" type="string" />
+            <attribute name="service" type="string" />
+            <attribute name="ref" type="string" />
+            <attribute name="protocol" type="string" />
+            <attribute name="group" type="string" />
+        </complexType>
+    </element>
+</schema>

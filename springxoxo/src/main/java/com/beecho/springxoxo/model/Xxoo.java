@@ -3,7 +3,7 @@ package com.beecho.springxoxo.model;
 /**
  * Created by Administrator on 2017/7/17.
  */
-public class User {
+public class Xxoo {
     private String userName;
     private String email;
 

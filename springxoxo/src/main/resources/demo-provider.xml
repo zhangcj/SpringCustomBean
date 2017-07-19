@@ -1,0 +1,13 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xxoo="http://www.springxoxo.com/schema/beecho"
+       xsi:schemaLocation="
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+     http://www.springxoxo.com/schema/beecho http://www.springxoxo.com/schema/beecho.xsd">
+
+    <xxoo:xxoo id="userBean" userName="春哥" email="1032578874@qq.com"/>
+    <xxoo:application id="applicationBean" name="your application" owner="邮箱前缀" organization="your organization"/>
+
+    <!--<bean class="com.beecho.springxoxo.annotation.AnnotationContext"/>-->
+</beans>

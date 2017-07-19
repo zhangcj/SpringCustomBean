@@ -1,1 +1,1 @@
-http\://www.springxoxo.com/schema/user=com.beecho.springxoxo.namespaceHandler.UserNamespaceHandler
+http\://www.springxoxo.com/schema/beecho=com.beecho.springxoxo.namespaceHandler.BeechoNamespaceHandler
