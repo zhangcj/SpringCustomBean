@@ -2,6 +2,7 @@ package com.beecho.springxoxo.example;
 
 import com.beecho.springxoxo.model.User;
 import com.beecho.springxoxo.model.Xxoo;
+import org.springframework.stereotype.Controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 

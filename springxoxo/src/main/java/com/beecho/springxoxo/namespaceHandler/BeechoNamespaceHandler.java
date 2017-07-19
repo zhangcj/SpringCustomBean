@@ -1,6 +1,7 @@
 package com.beecho.springxoxo.namespaceHandler;
 
 import com.beecho.springxoxo.beanDefinition.*;
+import com.beecho.springxoxo.model.Xxoo;
 import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 
 /**
@@ -9,7 +10,7 @@ import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 public class BeechoNamespaceHandler extends NamespaceHandlerSupport {
 
     public void init() {
-        registerBeanDefinitionParser("xxoo", new XxooBeanDefinitionParser());
+        registerBeanDefinitionParser("xxoo", new XxooBeanDefinitionParser(Xxoo.class));
         registerBeanDefinitionParser("application", new ApplicationBeanDefinitionParser());
         registerBeanDefinitionParser("registry", new RegisterBeanDefinitionParser());
         registerBeanDefinitionParser("protocol", new ProtocolBeanDefinitionParser());

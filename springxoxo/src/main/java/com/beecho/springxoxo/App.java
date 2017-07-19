@@ -11,8 +11,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
     public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("demo-provider.xml");
-        Xxoo bean = (Xxoo) ac.getBean("userBean");
-//
+//        Xxoo bean = (Xxoo) ac.getBean("userBean");
+        Xxoo bean = ac.getBean(Xxoo.class);
+
 //        User bean = (User) AnnotationContext.getBean("userBean");
         System.out.println(bean.getUserName() + " " + bean.getEmail());
 
