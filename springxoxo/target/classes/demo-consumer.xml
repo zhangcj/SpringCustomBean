@@ -6,7 +6,7 @@
 http://www.springxoxo.com/schema/beecho http://www.springxoxo.com/schema/turbo/beecho.xsd">
 
     <!--application name不要与提供方一样，应用名称，应用所有者，组织，命名规则：字母，数字，“-“，”_“，“.”-->
-    <xxoo:application name="demo-consumer" owner="邮箱前缀" organization="yourorganization"/>
+    <!--<xxoo:application name="demo-consumer" owner="邮箱前缀" organization="yourorganization"/>-->
     <!--注册中心地址-->
     <xxoo:registry address="192.168.8.48:2181" protocol="zookeeper"/>
 

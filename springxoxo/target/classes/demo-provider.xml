@@ -2,18 +2,20 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:xxoo="http://www.springxoxo.com/schema/beecho"
-       xsi:schemaLocation="
-     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
-     http://www.springxoxo.com/schema/beecho http://www.springxoxo.com/schema/beecho.xsd"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+     http://www.springxoxo.com/schema/beecho http://www.springxoxo.com/schema/beecho.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        default-autowire="byName">
+    <context:component-scan base-package="com.beecho.springxoxo.beecho"/>
 
-    <xxoo:xxoo userName="春哥" email="1032578874@qq.com"/>
+    <!--<xxoo:xxoo userName="春哥" email="1032578874@qq.com"/>-->
     <!--应用名称，应用所有者，组织，命名规则：字母，数字，“-“，”_“，“.”-->
-    <xxoo:application name="yourapplication" owner="邮箱前缀" organization="yourorganization"/>
+    <!--<xxoo:application name="yourapplication" owner="邮箱前缀" organization="yourorganization"/>-->
     <xxoo:registry address="192.168.8.48:2181" protocol="zookeeper"/><!--注册中心地址-->
-    <xxoo:protocol name="netty"/> <!--协议类型-->
+    <!--<xxoo:protocol name="netty"/> &lt;!&ndash;协议类型&ndash;&gt;-->
 
-    <xxoo:service service="com.beecho.springxoxo.example.UserService" ref="userService" protocol="netty" group="test"/> <!--提供接口-->
+    <xxoo:service service="com.beecho.springxoxo.example.UserService" ref="userService" protocol="netty"
+                  group="test"/> <!--提供接口-->
     <bean id="userService" class="com.beecho.springxoxo.example.UserServiceImpl"/> <!--接口的实现-->
 
     <!--<bean class="com.beecho.springxoxo.annotation.AnnotationContext"/>-->
