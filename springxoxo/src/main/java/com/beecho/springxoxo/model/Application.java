@@ -6,6 +6,7 @@ package com.beecho.springxoxo.model;
 
 public class Application {
     private String name;
+    private String version;
     private String owner;
     private String organization;
 
@@ -15,6 +16,14 @@ public class Application {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
     }
 
     public String getOwner() {

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xxoo="http://www.springxoxo.com/schema/beecho"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springxoxo.com/schema/beecho http://www.springxoxo.com/schema/turbo/beecho.xsd">
+
+    <!--application name不要与提供方一样，应用名称，应用所有者，组织，命名规则：字母，数字，“-“，”_“，“.”-->
+    <xxoo:application name="demo-consumer" owner="邮箱前缀" organization="yourorganization"/>
+    <!--注册中心地址-->
+    <xxoo:registry address="192.168.8.48:2181" protocol="zookeeper"/>
+
+    <xxoo:reference id="userService" service="com.demo.UserService" group="autohome"/>
+</beans>
